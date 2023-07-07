@@ -2,7 +2,8 @@
    if (isset($_POST['searchterm'])) {
       // Esto no se debería hacer, es inseguro
       // echo $_POST['searchterm'];
-      echo htmlspecialchars($_POST['searchterm'], ENT_QUOTES);
+      echo htmlspecialchars($_POST['searchterm'], ENT_QUOTES) . "<br>";
+      echo htmlspecialchars($_POST['searchterm']);
    }
 ?>
 
